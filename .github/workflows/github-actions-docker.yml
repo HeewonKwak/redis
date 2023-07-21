@@ -3,7 +3,7 @@ name: Push Docker Image
 on:
   push:
     branches:
-      - develop # 또는 배포하려는 브랜치
+      - main # 또는 배포하려는 브랜치
 
 env:
   DOCKER_REGISTRY: heewoni # Docker Hub 사용시

@@ -9,7 +9,7 @@ env:
   DOCKER_REGISTRY: heewoni # Docker Hub 사용시
   IMAGE_NAME: redis # 이미지 이름
   IMAGE_TAG: latest # 이미지 태그
-  DOCKERFILE_PATH: ./Backend/backend_model # 빌드를 원하는 폴더 경로
+  DOCKERFILE_PATH: ./app # 빌드를 원하는 폴더 경로
   CONTAINER_NAME: redis # 컨테이너 이름
 
 jobs:

@@ -30,9 +30,6 @@ jobs:
       # Docker Image Build
       - name: Build
         run: |-
-          pwd
-          cd app
-          ls
           docker build . --file Dockerfile -t ${{ env.DOCKER_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
           docker push ${{ env.DOCKER_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
       -

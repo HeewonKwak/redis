@@ -9,4 +9,4 @@ WORKDIR /app
 
 RUN pip install fastapi "uvicorn[standard]" requests redis
 
-CMD python redis_test.py
+CMD python main.py

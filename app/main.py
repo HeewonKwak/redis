@@ -6,7 +6,7 @@ app = FastAPI()
 
 import redis
 
-r = redis.Redis(host='127.0.0.1', port=6379, db=0)
+r = redis.Redis(host='34.125.181.131', port=6379, db=0)
 
 r.set('foo', 'bar')
 

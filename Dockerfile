@@ -7,9 +7,9 @@ ENV PYTHONPATH "${PYTHONPATH}:/app"
 COPY . /app
 WORKDIR /app
 
-RUN sudo apt-get update
-RUN sudo apt-get upgrade
-RUN sudo apt-get install redis-server
+RUN apt-get update
+RUN apt-get upgrade
+RUN apt-get install redis-server
 RUN pip install fastapi "uvicorn[standard]" requests redis
 
 EXPOSE 8000
